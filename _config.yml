@@ -1,0 +1,13 @@
+# Site settings
+title: Breakfast with a Geek
+email: geekbreakfast@gmail.com
+description: Two geeks meeting almost every morning to have a conversation about everything and the world
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://geekbreakfast.it" # the base hostname & protocol for your site
+twitter_username: _geekbreakfast
+github_username:  geekbreakfast
+twitter_alessandro: lord2y
+twitter_joern: joernba
+
+# Build settings
+markdown: kramdown
