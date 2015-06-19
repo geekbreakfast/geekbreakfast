@@ -1,0 +1,23 @@
+/* Grid */
+.inner {
+  width: 90%;
+  max-width: $content-width;
+  margin: 0 auto;
+}
+.grid {
+  display: flex;
+  flex-direction: row;
+  &__item {
+    flex-grow: 1;
+  }
+}
+/* setting column widths */
+.grid__item-one-whole {
+  width: 100%;
+}
+.grid__item-one-half {
+  width: 50%;
+}
+.grid__item-one-third {
+  width: 33%;
+}
