@@ -21,3 +21,34 @@
 .grid__item-one-third {
   width: 33%;
 }
+
+/* Hero */
+
+.hero {
+  position: relative;
+  max-height: 690px;
+  overflow: hidden;
+  &__title {
+    font-size: $huge-font-size;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    margin-top: -60px;
+    height: 120px;
+    width: 100%;
+    a {
+      color: $background-color;
+    }
+  }
+  &__content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100%;
+  }
+  &__filler {
+    background-color: $alt-background-color;
+    height: 300px;
+    width: 100%;
+  }
+}

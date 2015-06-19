@@ -10,12 +10,14 @@ $base-font-family: 'Neuton', serif;
 $highlight-font-family: 'PT Sans', sans-serif;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
+$huge-font-size:  $base-font-size * 6;
 $base-line-height: 1.5;
 
 $pad:     1em;
 
 $text-color:       #111;
 $background-color: #fdfdfd;
+$alt-background-color: #d5f4d9;
 $brand-color:      #2a7ae2;
 
 // Width of the content area
@@ -46,5 +48,6 @@ $on-laptop:        800px;
         "reset",
         "base",
         "layout",
+        "nav",
         "syntax-highlighting"
 ;

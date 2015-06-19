@@ -1,0 +1,14 @@
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  font-family: $highlight-font-family;
+  &__list {
+    &-item {
+      
+    }
+    a {
+      color: $background-color;
+      line-height: 3em;
+    }
+  }
+}

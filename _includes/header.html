@@ -1,20 +1,28 @@
 <header class="hero">
+  <div class="hero__content inner">
 
-  <div class="inner">
+    <nav class="nav">
 
-    <a class="hero__title" href="{{ site.baseurl }}/">{{ site.title }}</a>
-
-    <nav class="hero__nav">
-
-      <ul class="hero__nav-list">
+      <ul class="nav__list">
         {% for page in site.pages %}
           {% if page.title %}
-          <li class="hero__nav-item"><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+          <li class="nav__list-item"><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
           {% endif %}
         {% endfor %}
       </ul>
     </nav>
+    
+    <h1 class="hero__title"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
 
+  </div>
+  <div class="hero__media">
+    {% if page.url == "/index.html" %}
+      <img src="{{ site.baseurl }}/img/course-hero.jpg">
+    {% elsif page.image %}
+      <img src="{{ site.baseurl }}/img/{{ page.image }}">
+    {% else %}
+      <div class="hero__filler"></div>
+    {% endif %}
   </div>
 
 </header>
