@@ -52,3 +52,15 @@
     width: 100%;
   }
 }
+
+/* Main */
+.main {
+  margin-top: $pad*3;
+}
+
+/* Footer */
+.footer {
+  background-color: lighten($light-background-color, 20%);
+  margin-top: $pad*3;
+  padding: $pad 0;
+}
