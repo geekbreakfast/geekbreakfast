@@ -4,9 +4,7 @@ layout: default
 
 <div class="main__page">
 
-  <h1 class="main__page-heading">Posts</h1>
-
-  <ul class="main__post-list">
+  <ul class="main__posts-list">
     {% for post in site.posts %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
@@ -14,6 +12,7 @@ layout: default
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
+        <p>{{ post.excerpt }}</p>
       </li>
     {% endfor %}
   </ul>

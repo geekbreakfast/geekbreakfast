@@ -56,6 +56,11 @@
 /* Main */
 .main {
   margin-top: $pad*3;
+  &__posts-list {
+    li {
+      margin-bottom: $pad*6;
+    }
+  }
 }
 
 /* Footer */
