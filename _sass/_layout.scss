@@ -39,6 +39,9 @@
     a {
       color: $background-color;
     }
+    @include media-query($on-palm) {
+      font-size: $big-font-size;
+    }
   }
   &__content {
     position: absolute;
