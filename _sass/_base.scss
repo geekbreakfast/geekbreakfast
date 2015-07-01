@@ -62,7 +62,7 @@ figcaption {
  * Lists
  */
 ul, ol {
-  
+
 }
 
 li {
@@ -104,7 +104,7 @@ a {
     }
 
     &:hover {
-        color: $text-color;
+        color: lighten($brand-color, 30%);
         text-decoration: underline;
     }
 }
