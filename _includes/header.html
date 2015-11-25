@@ -13,10 +13,9 @@
     </nav>
     
     <h1 class="hero__title"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
-
   </div>
   <div class="hero__media">
-    {% if page.url == "/" %}
+    {% if page.url == "/index.html" or page.url == "/" %}
       <img src="{{ site.baseurl }}/img/header.jpg">
     {% elsif page.image %}
       <img src="{{ site.baseurl }}/img/{{ page.image }}">
